@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --canvas: #f8f6ef;
+  --ink: #122117;
+  --surface: #fffdf6;
+  --muted: #5a6a61;
+  --brand: #12715b;
+  --brand-strong: #0a5f4b;
+  --accent: #ff8f3f;
+  --danger: #c0392b;
+  --ok: #157347;
+  --line: #d7ddce;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-ink: var(--ink);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-accent: var(--accent);
+  --color-danger: var(--danger);
+  --color-ok: var(--ok);
+  --color-line: var(--line);
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-space-grotesk);
+}
+
+body {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at 15% 10%, #ffe8c5 0%, transparent 30%),
+    radial-gradient(circle at 80% 0%, #d6efe7 0%, transparent 25%),
+    var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-dm-sans), sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a,
+button,
+label,
+summary,
+select,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+[role="button"],
+[data-clickable="true"] {
+  cursor: pointer !important;
+}
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed !important;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea {
+  cursor: text;
+}
+
+.app-shell {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 980px;
+}

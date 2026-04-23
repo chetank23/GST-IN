@@ -1,0 +1,9 @@
+{
+  "common": {
+    "newBill": "नया बिल",
+    "scanBill": "बिल स्कैन करें",
+    "addExpense": "खर्च जोड़ें",
+    "whatsappBill": "व्हाट्सएप बिल",
+    "voiceBill": "वॉइस बिल"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "common": {
+    "newBill": "New Bill",
+    "scanBill": "Scan Bill",
+    "addExpense": "Add Expense",
+    "whatsappBill": "WhatsApp Bill",
+    "voiceBill": "Voice Bill"
+  }
+}
